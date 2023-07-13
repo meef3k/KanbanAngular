@@ -6,13 +6,6 @@
       "priority": "Low",
       "state": "In progress",
       "id": 1
-    },
-    {
-      "name": "Epic 2",
-      "description": "Descriptio",
-      "priority": "Low",
-      "state": "To do",
-      "id": 2
     }
   ]
 }

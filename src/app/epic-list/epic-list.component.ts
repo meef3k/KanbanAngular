@@ -4,6 +4,8 @@ import { Epic } from '../models/epic.model';
 import { ApiService } from '../services/api.service';
 import { MatSort } from '@angular/material/sort';
 import { Router } from '@angular/router';
+import { NgConfirmService } from 'ng-confirm-box';
+import { NgToastService } from 'ng-angular-popup';
 
 @Component({
   selector: 'app-epic-list',
@@ -17,7 +19,7 @@ export class EpicListComponent implements OnInit {
   @ViewChild(MatSort) sort!: MatSort;
   displayedColumns: string[] = ["name", "description", "priority", "state", "actions"];
 
-  constructor(private api: ApiService, private router: Router){
+  constructor(private api: ApiService, private toast: NgToastService, private router: Router, private confirm: NgConfirmService){
 
   }
   ngOnInit(): void {
@@ -39,5 +41,18 @@ export class EpicListComponent implements OnInit {
 
   edit(id: number) {
     this.router.navigate(['epics/edit', id])
+  }
+
+  delete(id: number){
+    this.confirm.showConfirm("Are you sure?",
+    ()=>{
+      this.api.deleteEpic(id).subscribe(res=>{
+        this.toast.success({ detail: "Success", summary: "Deleted successfully", duration: 3000});
+        this.getEpics();
+      });
+    },
+    ()=>{
+
+    });
   }
 }
