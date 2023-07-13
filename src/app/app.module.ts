@@ -9,6 +9,10 @@ import { EpicDetailComponent } from './epic-detail/epic-detail.component';
 import { EpicListComponent } from './epic-list/epic-list.component';
 import { NgToastModule } from 'ng-angular-popup';
 import { NgConfirmModule } from 'ng-confirm-box';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +26,10 @@ import { NgConfirmModule } from 'ng-confirm-box';
     AppRoutingModule,
     BrowserAnimationsModule,
     NgToastModule,
-    NgConfirmModule
+    NgConfirmModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
