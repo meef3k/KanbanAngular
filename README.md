@@ -11,7 +11,7 @@ Run `json-server --watch db.json` for a json server. Navigate to `http://localho
 
 ## Credentials
 Login: `Admin`
-Password: `password`
+Password: `password123`
 
 ## Code scaffolding
 
