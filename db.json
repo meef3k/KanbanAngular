@@ -25,7 +25,7 @@
       "name": "Epic 4",
       "description": "description",
       "priority": "Medium",
-      "state": "To do",
+      "state": "In progress",
       "id": 4
     }
   ],
@@ -53,6 +53,35 @@
       "state": "To do",
       "id": 3,
       "epicId": 1
+    },
+    {
+      "name": "dasdas",
+      "description": "dsadas",
+      "priority": "Medium",
+      "state": "In progress",
+      "startDate": "1111-12-11T22:36:00.000Z",
+      "finishDate": "1999-12-21T23:00:00.000Z",
+      "id": 4
+    },
+    {
+      "name": "name1",
+      "description": "description",
+      "priority": "Medium",
+      "state": "In progress",
+      "startDate": "2023-07-12T22:00:00.000Z",
+      "finishDate": "2023-07-12T22:00:00.000Z",
+      "epicId": "1",
+      "id": 7
+    },
+    {
+      "name": "dsadaaaa",
+      "description": "aaaaaaa",
+      "priority": "High",
+      "state": "In progress",
+      "startDate": "2023-07-12T22:00:00.000Z",
+      "finishDate": "2023-07-13T22:00:00.000Z",
+      "epicId": 1,
+      "id": 12
     }
   ]
 }

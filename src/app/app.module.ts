@@ -24,6 +24,8 @@ import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
+import { TaskCreateComponent } from './task-create/task-create.component';
+import { TaskDetailComponent } from './task-detail/task-detail.component';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { MatListModule } from '@angular/material/list';
     AppComponent,
     EpicCreateComponent,
     EpicDetailComponent,
-    EpicListComponent
+    EpicListComponent,
+    TaskCreateComponent,
+    TaskDetailComponent
   ],
   imports: [
     BrowserModule,

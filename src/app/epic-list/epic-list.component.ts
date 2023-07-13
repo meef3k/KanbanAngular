@@ -22,6 +22,7 @@ export class EpicListComponent implements OnInit {
   constructor(private api: ApiService, private toast: NgToastService, private router: Router, private confirm: NgConfirmService){
 
   }
+
   ngOnInit(): void {
     this.getEpics();
   }

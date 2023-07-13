@@ -1,0 +1,38 @@
+<mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>{{taskDetails.name}}</mat-card-title>
+      <mat-card-subtitle>{{taskDetails.description}}</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+        <mat-list-item>
+            <div matLine>
+                Priority: 
+                <button mat-button>{{taskDetails.priority}}</button>
+            </div>
+        </mat-list-item>
+        <mat-list-item>
+            <div matLine>
+                State: 
+                <button mat-button>{{taskDetails.state}}</button>
+            </div>
+        </mat-list-item>
+        <mat-list-item>
+            <div matLine>
+                Start date: 
+                <button mat-button>{{taskDetails.startDate | date:'longDate'}}</button>
+            </div>
+        </mat-list-item>
+        <mat-list-item>
+            <div matLine>
+                Finish date: 
+                <button mat-button>{{taskDetails.finishDate | date:'longDate'}}</button>
+            </div>
+        </mat-list-item>
+    </mat-card-content>
+    <mat-card-actions>
+        <button (click)="edit(taskId)" mat-icon-button color="accent"><i class="fa fa-pencil"></i></button>
+        <button (click)="delete(taskId)" mat-icon-button color="primary"><i class="fa fa-trash"></i></button>
+    </mat-card-actions>
+  </mat-card>
+  

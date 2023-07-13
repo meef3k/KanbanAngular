@@ -57,7 +57,7 @@ export class EpicCreateComponent implements OnInit {
 
   update(){
     this.api.updateEpic(this.epicForm.value, this.epicIdToEdit).subscribe(res =>{
-      this.toastService.success({detail: "Success", summary: "Epic added", duration: 3000});
+      this.toastService.success({detail: "Success", summary: "Epic modified", duration: 3000});
       this.epicForm.reset;
       this.router.navigate(['epics'])
     });
