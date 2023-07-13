@@ -3,6 +3,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { Epic } from '../models/epic.model';
 import { ApiService } from '../services/api.service';
 import { MatSort } from '@angular/material/sort';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-epic-list',
@@ -16,7 +17,7 @@ export class EpicListComponent implements OnInit {
   @ViewChild(MatSort) sort!: MatSort;
   displayedColumns: string[] = ["name", "description", "priority", "state", "actions"];
 
-  constructor(private api: ApiService){
+  constructor(private api: ApiService, private router: Router){
 
   }
   ngOnInit(): void {
@@ -34,5 +35,9 @@ export class EpicListComponent implements OnInit {
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
+
+  edit(id: number) {
+    this.router.navigate(['epics/edit', id])
   }
 }
