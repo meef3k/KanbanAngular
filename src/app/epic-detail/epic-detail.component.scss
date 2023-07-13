@@ -1,6 +1,17 @@
 .example-card {
-    max-width: 80%;
+    max-width: 90%;
     display: block;
     margin: 0 auto;
   }
+
+  .task-card {
+    width: 33%;
+    display: block;
+  }
   
+  .card-container {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }

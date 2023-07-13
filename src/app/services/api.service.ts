@@ -33,6 +33,10 @@ export class ApiService {
     return this.http.get<Epic>(`${this.baseUrl}/${id}`)
   }
 
+  getTasks(id: number){
+    return this.http.get<Task[]>(`${this.baseUrl}/${id}/tasks`)
+  }
+
   postTaskCreate(createObj: Task) {
     return this.http.post<Task>(`${this.taskUrl}`, createObj)
   }

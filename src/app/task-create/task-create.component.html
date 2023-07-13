@@ -1,5 +1,6 @@
 <div class="text-center">
-    <h1>Create task</h1>
+    <h1 *ngIf="!isUpdateActive">Create task</h1>
+    <h1 *ngIf="isUpdateActive">Edit task</h1>
 </div>
 
 <div class="registration-form m-3 p-4">
@@ -56,7 +57,7 @@
               </mat-form-field>
             </div>
         </div>
-        <button *ngIf="!isUpdateActive" (click)="submit()" class="mt-4" mat-raised-button color="accent">Submit</button>
-        <button *ngIf="isUpdateActive" (click)="update()" class="mt-4" mat-raised-button color="accent">Update</button>
+        <button *ngIf="!isUpdateActive" (click)="submit()" class="mt-4" mat-raised-button color="primary">Create</button>
+        <button *ngIf="isUpdateActive" (click)="update()" class="mt-4" mat-raised-button color="primary">Update</button>
     </form>
 </div>

@@ -1,87 +1,137 @@
 {
   "epics": [
     {
-      "name": "Epic 1",
-      "description": "description",
-      "priority": "High",
+      "name": "User functionality",
+      "description": "Create all necessary user functionalities",
+      "priority": "Medium",
       "state": "To do",
       "id": 1
     },
     {
-      "name": "Epic 2",
-      "description": "description",
+      "name": "CRUD",
+      "description": "Create CRUD",
       "priority": "High",
-      "state": "To do",
+      "state": "In progress",
       "id": 2
     },
     {
-      "name": "Epic 3",
-      "description": "description",
-      "priority": "Medium",
+      "name": "Setup project",
+      "description": "Create and setup project",
+      "priority": "High",
       "state": "Done",
       "id": 3
-    },
-    {
-      "name": "Epic 4",
-      "description": "description",
-      "priority": "Medium",
-      "state": "In progress",
-      "id": 4
     }
   ],
   "tasks": [
     {
-      "name": "Task 1",
-      "description": "Description",
-      "priority": "Low",
-      "state": "Done",
-      "id": 1,
-      "epicId": 1
-    },
-    {
-      "name": "Task 2",
-      "description": "Description",
-      "priority": "Low",
-      "state": "In progress",
-      "id": 2,
-      "epicId": 1
-    },
-    {
-      "name": "Task 3",
-      "description": "Description",
-      "priority": "Low",
-      "state": "To do",
-      "id": 3,
-      "epicId": 1
-    },
-    {
-      "name": "dasdas",
-      "description": "dsadas",
+      "name": "Register form",
+      "description": "Create register form",
       "priority": "Medium",
+      "state": "To do",
+      "startDate": "2023-07-15T22:00:00.000Z",
+      "finishDate": "",
+      "epicId": 1,
+      "id": 1
+    },
+    {
+      "name": "Login form",
+      "description": "Create login form",
+      "priority": "Medium",
+      "state": "To do",
+      "startDate": "2023-07-15T22:00:00.000Z",
+      "finishDate": "",
+      "epicId": 1,
+      "id": 2
+    },
+    {
+      "name": "User model",
+      "description": "Create user model",
+      "priority": "High",
+      "state": "Done",
+      "startDate": "2023-07-11T22:00:00.000Z",
+      "finishDate": "2023-07-12T22:00:00.000Z",
+      "epicId": 1,
+      "id": 3
+    },
+    {
+      "name": "User validation",
+      "description": "Create user validation",
+      "priority": "High",
       "state": "In progress",
-      "startDate": "1111-12-11T22:36:00.000Z",
-      "finishDate": "1999-12-21T23:00:00.000Z",
+      "startDate": "2023-07-11T22:00:00.000Z",
+      "finishDate": "",
+      "epicId": 1,
       "id": 4
     },
     {
-      "name": "name1",
-      "description": "description",
-      "priority": "Medium",
+      "name": "Create",
+      "description": "Add create",
+      "priority": "High",
+      "state": "Done",
+      "startDate": "2023-07-05T22:00:00.000Z",
+      "finishDate": "2023-07-10T22:00:00.000Z",
+      "epicId": 2,
+      "id": 5
+    },
+    {
+      "name": "Update",
+      "description": "Add update",
+      "priority": "High",
       "state": "In progress",
-      "startDate": "2023-07-12T22:00:00.000Z",
-      "finishDate": "2023-07-12T22:00:00.000Z",
-      "epicId": "1",
+      "startDate": "2023-07-10T22:00:00.000Z",
+      "finishDate": "",
+      "epicId": 2,
+      "id": 6
+    },
+    {
+      "name": "Read",
+      "description": "Add read",
+      "priority": "High",
+      "state": "Done",
+      "startDate": "2023-07-02T22:00:00.000Z",
+      "finishDate": "2023-07-05T22:00:00.000Z",
+      "epicId": 2,
       "id": 7
     },
     {
-      "name": "dsadaaaa",
-      "description": "aaaaaaa",
+      "name": "Delete",
+      "description": "Add delete",
+      "priority": "Medium",
+      "state": "To do",
+      "startDate": "",
+      "finishDate": "",
+      "epicId": 2,
+      "id": 8
+    },
+    {
+      "name": "Create project",
+      "description": "Create new project",
       "priority": "High",
-      "state": "In progress",
-      "startDate": "2023-07-12T22:00:00.000Z",
-      "finishDate": "2023-07-13T22:00:00.000Z",
-      "epicId": 1,
-      "id": 12
+      "state": "Done",
+      "startDate": "2023-07-01T22:00:00.000Z",
+      "finishDate": "2023-07-02T22:00:00.000Z",
+      "epicId": 3,
+      "id": 9
+    },
+    {
+      "name": "Setup github",
+      "description": "Upload project to github",
+      "priority": "High",
+      "state": "Done",
+      "startDate": "2023-07-02T22:00:00.000Z",
+      "finishDate": "2023-07-03T22:00:00.000Z",
+      "epicId": 3,
+      "id": 10
+    },
+    {
+      "name": "Configure docker",
+      "description": "Configure project to docker",
+      "priority": "High",
+      "state": "Done",
+      "startDate": "2023-07-03T22:00:00.000Z",
+      "finishDate": "2023-07-05T22:00:00.000Z",
+      "epicId": 3,
+      "id": 11
     }
   ]
 }
