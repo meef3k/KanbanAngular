@@ -19,8 +19,8 @@
         </mat-list-item>
     </mat-card-content>
     <mat-card-actions>
-        <button mat-icon-button color="accent"><i class="fa fa-pencil"></i></button>
-        <button mat-icon-button color="primary"><i class="fa fa-trash"></i></button>
+        <button (click)="edit(epicId)" mat-icon-button color="accent"><i class="fa fa-pencil"></i></button>
+        <button (click)="delete(epicId)" mat-icon-button color="primary"><i class="fa fa-trash"></i></button>
     </mat-card-actions>
   </mat-card>
   

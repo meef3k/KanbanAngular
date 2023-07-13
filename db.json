@@ -2,31 +2,57 @@
   "epics": [
     {
       "name": "Epic 1",
-      "description": "Descr",
-      "priority": "Low",
-      "state": "In progress",
+      "description": "description",
+      "priority": "High",
+      "state": "To do",
       "id": 1
+    },
+    {
+      "name": "Epic 2",
+      "description": "description",
+      "priority": "High",
+      "state": "To do",
+      "id": 2
+    },
+    {
+      "name": "Epic 3",
+      "description": "description",
+      "priority": "Medium",
+      "state": "Done",
+      "id": 3
     },
     {
       "name": "Epic 4",
       "description": "description",
       "priority": "Medium",
       "state": "To do",
-      "id": 2
-    },
-    {
-      "name": "dasda",
-      "description": "dsadas",
-      "priority": "Medium",
-      "state": "To do",
-      "id": 3
-    },
-    {
-      "name": "testst",
-      "description": "tset",
-      "priority": "Medium",
-      "state": "To do",
       "id": 4
+    }
+  ],
+  "tasks": [
+    {
+      "name": "Task 1",
+      "description": "Description",
+      "priority": "Low",
+      "state": "Done",
+      "id": 1,
+      "epicId": 1
+    },
+    {
+      "name": "Task 2",
+      "description": "Description",
+      "priority": "Low",
+      "state": "In progress",
+      "id": 2,
+      "epicId": 1
+    },
+    {
+      "name": "Task 3",
+      "description": "Description",
+      "priority": "Low",
+      "state": "To do",
+      "id": 3,
+      "epicId": 1
     }
   ]
 }

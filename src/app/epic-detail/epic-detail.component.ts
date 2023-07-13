@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Epic } from '../models/epic.model';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ApiService } from '../services/api.service';
+import { NgConfirmService } from 'ng-confirm-box';
+import { NgToastService } from 'ng-angular-popup';
 
 @Component({
   selector: 'app-epic-detail',
@@ -12,7 +14,7 @@ export class EpicDetailComponent implements OnInit {
   public epicId!: number;
   epicDetails!: Epic;
 
-  constructor(private activatedRoute: ActivatedRoute, private api: ApiService){
+  constructor(private activatedRoute: ActivatedRoute, private toast: NgToastService, private router: Router, private confirm: NgConfirmService, private api: ApiService){
 
   }
 
@@ -33,5 +35,22 @@ export class EpicDetailComponent implements OnInit {
           console.log(err);
         }
       })
+  };
+
+  edit(id: number) {
+    this.router.navigate(['epics/edit', id])
+  }
+
+  delete(id: number){
+    this.confirm.showConfirm("Are you sure?",
+    ()=>{
+      this.api.deleteEpic(id).subscribe(res=>{
+        this.toast.success({ detail: "Success", summary: "Deleted successfully", duration: 3000});
+        this.router.navigate(['epics'])
+      });
+    },
+    ()=>{
+
+    });
   }
 }
