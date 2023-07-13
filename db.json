@@ -1,4 +1,11 @@
 {
+  "users": [
+    {
+      "login": "Admin",
+      "password": "password123",
+      "id": 1
+    }
+  ],
   "epics": [
     {
       "name": "User functionality",

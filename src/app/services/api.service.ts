@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Epic } from '../models/epic.model';
 import { Task } from '../models/task.model';
+import { User } from '../models/user.model';
 
 @Injectable({
   providedIn: 'root'
@@ -10,8 +11,13 @@ export class ApiService {
 
   private baseUrl: string = "http://localhost:3000/epics";
   private taskUrl: string = "http://localhost:3000/tasks";
+  private userUrl: string = "http://localhost:3000/users";
 
   constructor(private http: HttpClient) { }
+
+  getUserId(id: number) {
+    return this.http.get<User>(`${this.userUrl}/${id}`)
+  }
 
   postEpicCreate(createObj: Epic) {
     return this.http.post<Epic>(`${this.baseUrl}`, createObj)
