@@ -1,0 +1,18 @@
+{
+  "epics": [
+    {
+      "name": "Epic 1",
+      "description": "Descr",
+      "priority": "Low",
+      "state": "In progress",
+      "id": 1
+    },
+    {
+      "name": "Epic 2",
+      "description": "Description",
+      "priority": "Medium",
+      "state": "Done",
+      "id": 2
+    }
+  ]
+}
