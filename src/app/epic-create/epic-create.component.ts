@@ -30,7 +30,7 @@ export class EpicCreateComponent implements OnInit {
   submit(){
     this.api.postEpicCreate(this.epicForm.value).subscribe(res =>{
       this.toastService.success({detail: "Success", summary: "Epic added", duration: 3000});
-      this.epicForm.reset();
+      this.epicForm.reset;
     });
   }
 }
