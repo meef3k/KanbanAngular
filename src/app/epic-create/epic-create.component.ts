@@ -32,10 +32,18 @@ export class EpicCreateComponent implements OnInit {
 
     this.activatedRoute.params.subscribe(val => {
       this.epicIdToEdit = val['id'];
-      this.api.getEpicId(this.epicIdToEdit).subscribe(res=>{
+      if (this.epicIdToEdit) {
         this.isUpdateActive = true;
-        this.fillFormToEdit(res);
-      });
+        this.api.getEpicId(this.epicIdToEdit)
+          .subscribe({
+            next: (res) => {
+              this.fillFormToEdit(res);
+            },
+            error: (err) => {
+              console.log(err);
+            }
+          })
+      }
     });
   }
 
@@ -43,6 +51,7 @@ export class EpicCreateComponent implements OnInit {
     this.api.postEpicCreate(this.epicForm.value).subscribe(res =>{
       this.toastService.success({detail: "Success", summary: "Epic added", duration: 3000});
       this.epicForm.reset;
+      this.router.navigate(['epics'])
     });
   }
 

@@ -8,7 +8,7 @@ const routes: Routes = [
   {path: '', redirectTo: 'epics', pathMatch: 'full'},
   {path: 'epics', component: EpicListComponent},
   {path: 'epics/create', component: EpicCreateComponent},
-  {path: 'epic/:id', component: EpicDetailComponent},
+  {path: 'epics/:id', component: EpicDetailComponent},
   {path: 'epics/edit/:id', component: EpicCreateComponent}
 ];
 

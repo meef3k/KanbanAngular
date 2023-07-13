@@ -22,7 +22,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
-
+import { MatCardModule } from '@angular/material/card';
+import { MatListModule } from '@angular/material/list';
 
 
 @NgModule({
@@ -50,7 +51,9 @@ import { MatSortModule } from '@angular/material/sort';
     ReactiveFormsModule,
     HttpClientModule,
     MatTableModule,
-    MatSortModule
+    MatSortModule,
+    MatCardModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
