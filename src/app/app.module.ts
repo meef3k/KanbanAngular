@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EpicCreateComponent } from './epic-create/epic-create.component';
 import { EpicDetailComponent } from './epic-detail/epic-detail.component';
 import { EpicListComponent } from './epic-list/epic-list.component';
+import { NgToastModule } from 'ng-angular-popup';
+import { NgConfirmModule } from 'ng-confirm-box';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { EpicListComponent } from './epic-list/epic-list.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgToastModule,
+    NgConfirmModule
   ],
   providers: [],
   bootstrap: [AppComponent]
